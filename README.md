@@ -14,14 +14,13 @@ Tamamen statik (HTML + CSS + az miktarda JavaScript), tek sayfalık kişisel tan
 │   ├── pinar-yalcin.jpg         Profil fotoğrafı (sitede kullanılan)
 │   ├── img1.jpeg                Orijinal fotoğraf (sitede kullanılmıyor)
 │   ├── profil-placeholder.svg   Yedek yer tutucu (silinebilir)
-│   ├── favicon.svg              Tarayıcı sekme simgesi
+│   ├── favicon.ico / favicon.svg / favicon-48.png / favicon-96.png / favicon-192.png
+│   │                            PY logosu simgeleri (tarayıcı sekmesi ve Google arama sonuçları)
 │   ├── apple-touch-icon.png     iPhone ana ekran simgesi
 │   └── og-image.png             Paylaşım önizleme görseli (1200×630)
 ├── sitemap.xml
 ├── robots.txt
 ├── CNAME                   GitHub Pages'e alan adını bildirir (avpinaryalcin.com)
-├── favicon.ico / favicon.svg / favicon-48.png / favicon-96.png / favicon-192.png / apple-touch-icon.png
-│                           PY logosu simgeleri (Google arama sonuçlarında görünür; kök dizinde kalmalı)
 └── .nojekyll               GitHub Pages'in Jekyll işlemesini kapatır
 ```
 
@@ -50,7 +49,7 @@ Editörünüzde (ör. VS Code) **Ctrl + Shift + F** ile tüm projede aratıp de�
 | `90XXXXXXXXXX` | WhatsApp numarası. `+` ve boşluk olmadan (ör. `905321234567`) | index.html (`wa.me/` linki) |
 | `[E-POSTA]` | E-posta adresi | index.html, kvkk.html |
 | `YOUR_FORM_ID` | Formspree form kimliği (aşağıya bakın) | index.html |
-| `[TARİH]`, `[SAKLAMA SÜRESİ]` | KVKK metni tarihi ve saklama süresi | kvkk.html |
+| `[SAKLAMA SÜRESİ]` | KVKK metnindeki saklama süresi (metni değiştirdiğinizde "Son güncelleme" tarihini de güncelleyin) | kvkk.html |
 | Adres ve harita | Adres, harita (`data-src`) ve "Google Haritalar'da Aç" linki doldurulmuş durumda. Değiştirmek için aşağıdaki harita adımlarına bakın | index.html, kvkk.html |
 | Profil fotoğrafı | Şu an `assets/pinar-yalcin.jpg` kullanılıyor (`img1.jpeg`'den 4:5 oranında kırpıldı). Değiştirmek için yeni fotoğrafı `assets/` klasörüne koyup `index.html` içindeki yolu güncelleyin (dikey, 4:5 oran, ~700×875 px veya üzeri) | index.html |
 
@@ -121,14 +120,14 @@ Site **https://avpinaryalcin.com** adresinde yayınlanacak şekilde hazırlanmı
 5. "Add a README" kutusunu **işaretlemeyin** ve **Create repository** butonuna tıklayın.
 
 ### 2. Dosyaları gönderin (git komutları)
-Proje klasöründe terminal açın ve sırasıyla çalıştırın. `KULLANICIADI` yerine GitHub kullanıcı adınızı yazın:
+Proje klasöründe terminal açın ve sırasıyla çalıştırın (depo zaten oluşturulup bağlandıysa bu adımı atlayın):
 
 ```bash
 git init
 git add .
 git commit -m "İlk sürüm: kişisel web sitesi"
 git branch -M main
-git remote add origin https://github.com/KULLANICIADI/avpinaryalcin.git
+git remote add origin https://github.com/AbdullahKarakoc/avpinaryalcin.git
 git push -u origin main
 ```
 
@@ -160,7 +159,7 @@ Alan adını satın aldığınız firmanın (ör. Natro, İsimtescil, Turhost, G
 | A | `@` | `185.199.109.153` |
 | A | `@` | `185.199.110.153` |
 | A | `@` | `185.199.111.153` |
-| CNAME | `www` | `KULLANICIADI.github.io` *(GitHub kullanıcı adınız; depo adı yazılmaz)* |
+| CNAME | `www` | `abdullahkarakoc.github.io` *(GitHub kullanıcı adı; depo adı yazılmaz)* |
 | AAAA *(isteğe bağlı, IPv6)* | `@` | `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153` |
 
 Bu ayarlarla `www.avpinaryalcin.com` adresine gelen ziyaretçiler GitHub tarafından otomatik olarak `avpinaryalcin.com` adresine yönlendirilir.
