@@ -47,7 +47,6 @@ Editörünüzde (ör. VS Code) **Ctrl + Shift + F** ile tüm projede aratıp de�
 | `[TELEFON]` | Ekranda görünen telefon (ör. `0 (5XX) XXX XX XX`) | index.html, kvkk.html |
 | `+90XXXXXXXXXX` | Tıklayınca arama yapan link. Boşluksuz, `+90` ile (ör. `+905321234567`) | index.html, kvkk.html |
 | `90XXXXXXXXXX` | WhatsApp numarası. `+` ve boşluk olmadan (ör. `905321234567`) | index.html (`wa.me/` linki) |
-| `[E-POSTA]` | E-posta adresi | index.html, kvkk.html |
 | `YOUR_FORM_ID` | Formspree form kimliği (aşağıya bakın) | index.html |
 | `[SAKLAMA SÜRESİ]` | KVKK metnindeki saklama süresi (metni değiştirdiğinizde "Son güncelleme" tarihini de güncelleyin) | kvkk.html |
 | Adres ve harita | Adres, harita (`data-src`) ve "Google Haritalar'da Aç" linki doldurulmuş durumda. Değiştirmek için aşağıdaki harita adımlarına bakın | index.html, kvkk.html |
