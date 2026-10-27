@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO: Başlık ve açıklama ===== -->
+  <!-- NOT: Avukatlık ruhsatı alınana kadar "Av." unvanı ve "avukat" ifadesi kullanılmamalıdır (README > Hukuki notlar) -->
+  <title>Pınar Yalçın | Hukuk Fakültesi Mezunu – İstanbul</title>
+  <meta name="description" content="Pınar Yalçın – İzmir Demokrasi Üniversitesi Hukuk Fakültesi mezunu. Eğitim bilgileri, ilgi alanları ve iletişim bilgileri.">
+  <meta name="author" content="Pınar Yalçın">
+  <meta name="theme-color" content="#14213D">
+  <meta name="color-scheme" content="light dark">
+  <!-- Yayın adresi (alan adı değişirse buradaki ve aşağıdaki adresleri güncelleyin) -->
+  <link rel="canonical" href="https://avpinaryalcin.com/">
+
+  <!-- ===== Open Graph (WhatsApp, LinkedIn, Facebook paylaşım önizlemesi) ===== -->
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Pınar Yalçın">
+  <meta property="og:title" content="Pınar Yalçın | Hukuk Fakültesi Mezunu">
+  <meta property="og:description" content="Kişisel tanıtım sayfası: eğitim, ilgi alanları ve iletişim bilgileri.">
+  <meta property="og:url" content="https://avpinaryalcin.com/">
+  <!-- og:image tam (mutlak) adres olmalıdır -->
+  <meta property="og:image" content="https://avpinaryalcin.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pınar Yalçın – Hukuk Fakültesi Mezunu">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- ===== Simgeler ===== -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- ===== Yazı tipleri (Google Fonts) ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tema (açık/koyu) ve animasyon sınıfını sayfa çizilmeden önce ayarla (titremeyi önler).
+       Tema tercihi yalnızca ziyaretçinin tarayıcısında (localStorage) saklanır; çerez değildir. -->
+  <script>
+    (function () {
+      var d = document.documentElement, t = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      d.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <!-- ===== Yapılandırılmış veri (schema.org) – arama motorları için =====
+       Ruhsat alınana kadar hukuki hizmet türü (LegalService) yerine kişi (Person) türü kullanılır. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pınar Yalçın",
+    "url": "https://avpinaryalcin.com/",
+    "image": "https://avpinaryalcin.com/assets/pinar-yalcin.jpg",
+    "description": "Hukuk fakültesi mezunu",
+    "email": "[E-POSTA]",
+    "knowsLanguage": ["tr", "en"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "İzmir Demokrasi Üniversitesi"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Maltepe",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR"
+    },
+    "knowsAbout": ["Aile Hukuku", "Ceza Hukuku", "İş Hukuku", "Gayrimenkul Hukuku", "Ticaret Hukuku", "Miras Hukuku"],
+    "sameAs": ["https://www.linkedin.com/in/pyal%C3%A7%C4%B1n/", "https://www.instagram.com/pinaryalcinnn1/"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Klavye kullanıcıları için "içeriğe atla" bağlantısı -->
+  <a class="skip-link" href="#ana-icerik">İçeriğe geç</a>
+
+  <!-- ================= ÜST MENÜ (sticky) ================= -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Pınar Yalçın – Ana sayfa">
+        <span class="brand-mark" aria-hidden="true">PY</span>
+        <span class="brand-text">Pınar Yalçın</span>
+      </a>
+
+      <nav class="site-nav" id="ana-menu" aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#ilgi-alanlari">İlgi Alanları</a></li>
+          <li><a href="#degerler">Değerlerim</a></li>
+          <li><a href="#egitim">Eğitim</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <li><a class="btn btn-gold btn-sm nav-cta" href="#iletisim-formu">İletişime Geç</a></li>
+        </ul>
+        <!-- Aktif bölümün altında kayan altın çizgi (masaüstü) -->
+        <span class="nav-indicator" aria-hidden="true"></span>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Açık / koyu tema düğmesi -->
+        <button class="icon-btn theme-toggle" type="button" aria-label="Koyu temaya geç">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+
+        <!-- Mobil hamburger butonu -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="ana-menu" aria-label="Menüyü aç">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <!-- Sayfa okuma ilerleme çubuğu -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="ana-icerik">
+
+    <!-- ================= 1. HERO ================= -->
+    <section class="hero" id="hero" aria-labelledby="hero-baslik">
+      <!-- Arka plandaki hareketli altın parçacık ağı (js/main.js çizer) -->
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow eyebrow-light hero-anim" style="--d:0">Hukuk Fakültesi Mezunu</p>
+
+          <h1 class="hero-title" id="hero-baslik">
+            <span class="line"><span class="word" style="--d:1">Pınar</span></span>
+            <span class="line"><span class="word gold-text" style="--d:2">Yalçın</span></span>
+          </h1>
+
+          <!-- Daktilo efektiyle dönen ifadeler: data-words içinde | ile ayırın -->
+          <p class="hero-lead hero-anim" style="--d:3">
+            <span class="sr-only">Hukuk fakültesi mezunu, HMGS'de başarılı, avukatlık stajına hazırlanıyor.</span>
+            <span aria-hidden="true"><span class="typer" data-words="Hukuk fakültesi mezunu.|HMGS'de başarılı.|Avukatlık stajına hazırlanıyor.">Hukuk fakültesi mezunu.</span><span class="caret"></span></span>
+          </p>
+
+          <p class="hero-sub hero-anim" style="--d:4">Hukuk etiğine bağlı, özenli ve sürekli öğrenmeye açık bir meslek yolculuğu.</p>
+
+          <div class="hero-actions hero-anim" style="--d:5">
+            <a class="btn btn-gold" href="#iletisim-formu" data-magnetic>
+              İletişime Geç
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-outline-light" href="https://www.linkedin.com/in/pyal%C3%A7%C4%B1n/" target="_blank" rel="noopener" data-magnetic>
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              LinkedIn Profili
+            </a>
+          </div>
+        </div>
+
+        <!-- Kendi kendine çizilen adalet terazisi (dekoratif) -->
+        <div class="hero-visual hero-anim" style="--d:2" aria-hidden="true">
+          <svg class="scales" viewBox="0 0 240 240">
+            <circle class="ring ring-outer" cx="120" cy="120" r="112"/>
+            <circle class="ring ring-inner draw" cx="120" cy="120" r="94" pathLength="1" style="--d:0"/>
+            <path class="draw" d="M120 58V190" pathLength="1" style="--d:1"/>
+            <circle class="draw" cx="120" cy="51" r="6" pathLength="1" style="--d:2"/>
+            <path class="draw" d="M82 196H158" pathLength="1" style="--d:2"/>
+            <path class="draw" d="M96 196Q120 178 144 196" pathLength="1" style="--d:3"/>
+            <g class="scales-beam">
+              <path class="draw" d="M62 70H178" pathLength="1" style="--d:3"/>
+              <circle class="draw" cx="120" cy="70" r="3" pathLength="1" style="--d:4"/>
+              <path class="draw" d="M66 70 50 128M66 70l16 58" pathLength="1" style="--d:4"/>
+              <path class="draw" d="M174 70l-16 58M174 70l16 58" pathLength="1" style="--d:4"/>
+              <path class="draw" d="M44 128H88M44 128Q66 150 88 128" pathLength="1" style="--d:5"/>
+              <path class="draw" d="M152 128H196M152 128Q174 150 196 128" pathLength="1" style="--d:5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#hakkimda" aria-label="Aşağı kaydır"><span aria-hidden="true"></span></a>
+    </section>
+
+    <!-- Kayan ilgi alanları şeridi (dekoratif) -->
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <span>Aile Hukuku</span><span>Ceza Hukuku</span><span>İş Hukuku</span><span>Gayrimenkul Hukuku</span><span>Ticaret Hukuku</span><span>Miras Hukuku</span>
+        <span>Aile Hukuku</span><span>Ceza Hukuku</span><span>İş Hukuku</span><span>Gayrimenkul Hukuku</span><span>Ticaret Hukuku</span><span>Miras Hukuku</span>
+      </div>
+    </div>
+
+    <!-- ================= 2. HAKKIMDA ================= -->
+    <section class="section" id="hakkimda" aria-labelledby="hakkimda-baslik">
+      <div class="container about-grid">
+        <figure class="about-photo reveal" data-reveal="left">
+          <div class="about-photo-frame">
+            <!-- Profil fotoğrafı (4:5 dikey oran). Değiştirmek için yeni fotoğrafı assets/ klasörüne koyup src'yi güncelleyin -->
+            <img src="assets/pinar-yalcin.jpg" alt="Pınar Yalçın mezuniyet töreninde, cübbesi ve kepiyle" width="700" height="875" loading="lazy" decoding="async">
+          </div>
+          <!-- Fotoğraf üzerindeki yüzen rozetler (bilgiler aşağıda metin olarak da var) -->
+          <div class="photo-badge badge-top" aria-hidden="true">
+            <strong>2026</strong>
+            <span>Mezuniyet</span>
+          </div>
+          <div class="photo-badge badge-bottom" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>
+            <span><strong>HMGS</strong>Başarılı</span>
+          </div>
+        </figure>
+
+        <div class="about-text reveal" data-reveal="right">
+          <p class="eyebrow">Hakkımda</p>
+          <h2 id="hakkimda-baslik" class="title-line">Pınar Yalçın</h2>
+          <!-- Biyografi metnini dilediğiniz gibi düzenleyebilirsiniz -->
+          <p>Pınar Yalçın, 2026 yılında İzmir Demokrasi Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve Hukuk Mesleklerine Giriş Sınavı'nda (HMGS) başarılı olmuştur.</p>
+          <p>Avukatlık stajına başlamaya hazırlanan Pınar Yalçın, mesleki yaşamında hukuk etiğine bağlı, özenli ve sürekli öğrenmeye açık bir çalışma anlayışını benimsemeyi hedeflemektedir.</p>
+
+          <dl class="about-facts" data-stagger>
+            <div class="fact reveal">
+              <svg class="fact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg>
+              <div>
+                <dt>Eğitim</dt>
+                <dd>İzmir Demokrasi Üniversitesi Hukuk Fakültesi, 2026</dd>
+              </div>
+            </div>
+            <div class="fact reveal">
+              <svg class="fact-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg>
+              <div>
+                <dt>HMGS</dt>
+                <dd>Hukuk Mesleklerine Giriş Sınavı – Başarılı</dd>
+              </div>
+            </div>
+            <div class="fact reveal">
+              <svg class="fact-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+              <div>
+                <dt>Yabancı Dil</dt>
+                <dd>İngilizce</dd>
+              </div>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ALINTI (kaydırdıkça kelime kelime aydınlanır) ================= -->
+    <section class="quote-band" aria-label="Alıntı">
+      <figure class="container container-narrow">
+        <p class="eyebrow quote-eyebrow">Adalet mülkün temelidir</p>
+        <!-- Metni kendi sözünüzle değiştirebilirsiniz -->
+        <blockquote>
+          <p class="quote-text" data-word-reveal>Hukuk; kuralları bilmekle değil, onları adalet duygusuyla, özenle ve dürüstçe uygulamakla anlam kazanır.</p>
+        </blockquote>
+      </figure>
+    </section>
+
+    <!-- ================= 3. İLGİ ALANLARI ================= -->
+    <section class="section section-alt" id="ilgi-alanlari" aria-labelledby="alanlar-baslik">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">İlgi Alanları</p>
+          <h2 id="alanlar-baslik" class="title-line">İlgilendiğim Hukuk Alanları</h2>
+          <p class="section-lead">Hukuk eğitimim boyunca özellikle ilgilendiğim ve staj sürecinde kendimi geliştirmeyi hedeflediğim alanlar.</p>
+        </header>
+
+        <ul class="cards" data-stagger>
+          <!-- Kart: Aile Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">01</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15.5 14.4c.5-.3 1-.4 1.5-.4 2.8 0 5 2.2 5 5"/></svg>
+            <h3>Aile Hukuku</h3>
+            <p>Boşanma, velayet, nafaka, mal rejimleri ve aile içi şiddete karşı koruma tedbirleri.</p>
+          </li>
+          <!-- Kart: Ceza Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">02</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="10" height="5" rx="1" transform="rotate(45 14 5.5)"/><path d="M12.2 7.3 4.5 15"/><path d="M12 21h9"/></svg>
+            <h3>Ceza Hukuku</h3>
+            <p>Suç ve cezanın genel ilkeleri, soruşturma ve kovuşturma süreçleri, sanık ve mağdur hakları.</p>
+          </li>
+          <!-- Kart: İş Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">03</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
+            <h3>İş Hukuku</h3>
+            <p>İş sözleşmeleri, kıdem ve ihbar tazminatı, işe iade ve zorunlu arabuluculuk.</p>
+          </li>
+          <!-- Kart: Gayrimenkul Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">04</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+            <h3>Gayrimenkul Hukuku</h3>
+            <p>Tapu iptali ve tescil, kira ilişkileri, kat mülkiyeti ve taşınmaz satışı.</p>
+          </li>
+          <!-- Kart: Ticaret Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">05</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/><path d="M10 21v-3h4v3"/></svg>
+            <h3>Ticaret Hukuku</h3>
+            <p>Şirketler hukuku, ticari sözleşmeler, kıymetli evrak ve ticari işletme hukuku.</p>
+          </li>
+          <!-- Kart: Miras Hukuku -->
+          <li class="card reveal" data-tilt>
+            <span class="card-num" aria-hidden="true">06</span>
+            <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+            <h3>Miras Hukuku</h3>
+            <p>Yasal ve atanmış mirasçılık, vasiyetname, saklı pay, mirasın paylaşımı ve tenkis.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 4. DEĞERLERİM ================= -->
+    <section class="section section-dark" id="degerler" aria-labelledby="degerler-baslik">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow-light">Değerlerim</p>
+          <h2 id="degerler-baslik" class="title-line">Mesleki Yaklaşım</h2>
+        </header>
+
+        <ul class="principles" data-stagger>
+          <li class="principle reveal">
+            <svg class="principle-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            <h3>Etik ve Gizlilik</h3>
+            <p>Hukuk etiğine ve gizlilik ilkesine bağlılığı mesleki yaşamımın temeli olarak görürüm.</p>
+          </li>
+          <li class="principle reveal">
+            <svg class="principle-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <h3>Şeffaflık</h3>
+            <p>Açık, dürüst ve anlaşılır iletişim kurmayı önemserim.</p>
+          </li>
+          <li class="principle reveal">
+            <svg class="principle-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2z"/><path d="M22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z"/></svg>
+            <h3>Sürekli Öğrenme</h3>
+            <p>Mevzuat ve içtihatları düzenli takip ederek kendimi geliştirmeyi hedeflerim.</p>
+          </li>
+          <li class="principle reveal">
+            <svg class="principle-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Sorumluluk</h3>
+            <p>Üstlendiğim her işi zamanında ve özenle tamamlamaya önem veririm.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= 5. EĞİTİM VE SÜREÇ (zaman çizelgesi) ================= -->
+    <section class="section" id="egitim" aria-labelledby="egitim-baslik">
+      <div class="container container-narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">Eğitim</p>
+          <h2 id="egitim-baslik" class="title-line">Eğitim ve Mesleki Süreç</h2>
+        </header>
+
+        <!-- Yeni bir adım eklemek için bir <li class="timeline-item"> bloğunu kopyalayın.
+             Tamamlanan adımlara "is-done" sınıfını ekleyin. -->
+        <ol class="timeline">
+          <li class="timeline-item is-done reveal">
+            <p class="timeline-label">2026</p>
+            <h3>Lisans Mezuniyeti</h3>
+            <p>İzmir Demokrasi Üniversitesi Hukuk Fakültesi</p>
+          </li>
+          <li class="timeline-item is-done reveal">
+            <p class="timeline-label">HMGS</p>
+            <h3>Hukuk Mesleklerine Giriş Sınavı</h3>
+            <p>Avukatlık, hâkimlik ve savcılık mesleklerine giriş için gerekli sınavda başarılı olunmuştur.</p>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-label">Sıradaki adım</p>
+            <h3>Avukatlık Stajı</h3>
+            <p>Mahkeme ve avukat yanında olmak üzere toplam bir yıl sürecek avukatlık stajı ve ardından baroya kayıt.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 6. İLETİŞİM ================= -->
+    <section class="section section-alt" id="iletisim" aria-labelledby="iletisim-baslik">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">İletişim</p>
+          <h2 id="iletisim-baslik" class="title-line">İletişim Bilgileri</h2>
+        </header>
+
+        <div class="contact-grid">
+          <ul class="contact-list" data-stagger>
+            <li class="contact-item reveal">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <div>
+                <h3>Telefon</h3>
+                <!-- Telefon numarasını uluslararası formatta yazın: tel:+905XXXXXXXXX -->
+                <a href="tel:+90XXXXXXXXXX">[TELEFON]</a>
+              </div>
+            </li>
+            <li class="contact-item reveal">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <div>
+                <h3>E-posta</h3>
+                <a href="mailto:[E-POSTA]">[E-POSTA]</a>
+              </div>
+              <!-- E-postayı panoya kopyala (data-copy içine de e-posta adresini yazın) -->
+              <button class="icon-btn copy-btn" type="button" data-copy="[E-POSTA]" aria-label="E-posta adresini kopyala">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+              </button>
+            </li>
+            <li class="contact-item reveal">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <div>
+                <h3>Adres</h3>
+                <address>Nidakule Küçükyalı, B6 Blok<br>Çınar Mah. Horasan Sok. No:113/21<br>34841 Maltepe / İstanbul</address>
+              </div>
+            </li>
+            <li class="contact-whatsapp reveal">
+              <!-- WhatsApp: wa.me/ sonrasına + ve boşluk olmadan ülke koduyla yazın (ör. 905XXXXXXXXX) -->
+              <a class="btn btn-whatsapp" href="https://wa.me/90XXXXXXXXXX" target="_blank" rel="noopener" data-magnetic>
+                <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a3.6 3.6 0 0 1-1.8-1.8l.8-1-1-2z"/></svg>
+                WhatsApp ile Yazın
+              </a>
+            </li>
+          </ul>
+
+          <!-- Harita: Gizlilik için tıklanınca yüklenir (Google Maps çerez kullanabilir).
+               Daha kesin konum için Google Maps > Paylaş > Harita yerleştir'den aldığınız iframe src adresini data-src'ye yazın. -->
+          <div class="map reveal" data-reveal="zoom" data-map
+               data-src="https://maps.google.com/maps?q=Nidakule%20K%C3%BC%C3%A7%C3%BCkyal%C4%B1%2C%20Maltepe%2C%20%C4%B0stanbul&amp;z=16&amp;output=embed">
+            <div class="map-placeholder">
+              <span class="map-pin" aria-hidden="true">
+                <svg class="map-placeholder-icon" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <p>Haritayı görüntülediğinizde Google'ın sunucularına bağlanılır ve Google çerez kullanabilir.</p>
+              <div class="map-actions">
+                <button type="button" class="btn btn-navy btn-sm" data-map-load>Haritayı Göster</button>
+                <a class="btn btn-outline btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Nidakule%20K%C3%BC%C3%A7%C3%BCkyal%C4%B1%2C%20Maltepe%2C%20%C4%B0stanbul" target="_blank" rel="noopener">Google Haritalar'da Aç</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. İLETİŞİM FORMU (Formspree) ================= -->
+    <section class="section" id="iletisim-formu" aria-labelledby="form-baslik">
+      <div class="container container-narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow">Mesaj Gönderin</p>
+          <h2 id="form-baslik" class="title-line">İletişim Formu</h2>
+          <p class="section-lead">Staj, iş birliği veya akademik konulardaki mesajlarınızı bu form aracılığıyla iletebilirsiniz. Avukatlık ruhsatı henüz alınmadığından bu form üzerinden hukuki danışmanlık verilmemektedir.</p>
+        </header>
+
+        <!-- YOUR_FORM_ID kısmını Formspree'den aldığınız form kimliğiyle değiştirin (README'ye bakın) -->
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <!-- Kayan etiketli alanlar: placeholder=" " silinmemeli (etiket animasyonu için gerekli) -->
+          <div class="form-row">
+            <div class="form-field field-float">
+              <input type="text" id="ad" name="ad_soyad" autocomplete="name" required minlength="3" placeholder=" " aria-describedby="ad-hata">
+              <label for="ad">Ad Soyad <span class="req" aria-hidden="true">*</span></label>
+              <p class="field-error" id="ad-hata" aria-live="polite"></p>
+            </div>
+            <div class="form-field field-float">
+              <input type="email" id="eposta" name="email" autocomplete="email" required placeholder=" " aria-describedby="eposta-hata">
+              <label for="eposta">E-posta <span class="req" aria-hidden="true">*</span></label>
+              <p class="field-error" id="eposta-hata" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field field-float">
+              <input type="tel" id="telefon" name="telefon" autocomplete="tel" inputmode="tel" placeholder=" " aria-describedby="telefon-hata">
+              <label for="telefon">Telefon <span class="optional">(isteğe bağlı)</span></label>
+              <p class="field-error" id="telefon-hata" aria-live="polite"></p>
+            </div>
+            <div class="form-field field-float is-static">
+              <select id="konu" name="konu">
+                <option value="Genel">Genel</option>
+                <option value="Staj / İş Birliği">Staj / İş Birliği</option>
+                <option value="Akademik / Etkinlik">Akademik / Etkinlik</option>
+                <option value="Diğer">Diğer</option>
+              </select>
+              <label for="konu">Konu</label>
+            </div>
+          </div>
+
+          <div class="form-field field-float">
+            <textarea id="mesaj" name="mesaj" rows="5" required minlength="20" maxlength="2000" placeholder=" " aria-describedby="mesaj-hata mesaj-sayac"></textarea>
+            <label for="mesaj">Mesajınız <span class="req" aria-hidden="true">*</span></label>
+            <div class="field-meta">
+              <p class="field-error" id="mesaj-hata" aria-live="polite"></p>
+              <p class="char-count" id="mesaj-sayac">0 / 2000</p>
+            </div>
+          </div>
+
+          <!-- KVKK onay kutusu (zorunlu) -->
+          <div class="form-field form-check">
+            <input type="checkbox" id="kvkk" name="kvkk_onay" value="Onaylandı" required aria-describedby="kvkk-hata">
+            <label for="kvkk"><a href="kvkk.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a>'ni okudum; ilettiğim kişisel verilerin, mesajıma dönüş yapılması amacıyla ve form hizmet sağlayıcısının yurt dışındaki sunucuları aracılığıyla işlenmesine açık rıza veriyorum. <span class="req" aria-hidden="true">*</span></label>
+            <p class="field-error" id="kvkk-hata" aria-live="polite"></p>
+          </div>
+
+          <!-- Spam koruması (honeypot): gerçek kullanıcılar görmez, doldurmaz -->
+          <div class="hp" aria-hidden="true">
+            <label for="gotcha">Bu alanı boş bırakın</label>
+            <input type="text" id="gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+          <input type="hidden" name="_subject" value="Web sitesi – yeni mesaj">
+
+          <button type="submit" class="btn btn-navy btn-block btn-submit">
+            <span class="btn-label">Gönder</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+          <!-- Başarılı gönderim sonrası gösterilen panel -->
+          <div class="form-success" hidden>
+            <svg class="success-check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24" pathLength="1"/><path d="m15 27 7 7 15-16" pathLength="1"/></svg>
+            <h3 tabindex="-1">Teşekkürler!</h3>
+            <p>Mesajınız iletildi. En kısa sürede dönüş yapılacaktır.</p>
+            <button type="button" class="btn btn-outline btn-sm" data-form-reset>Yeni mesaj gönder</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 8. FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">PY</span>
+        <div>
+          <p class="footer-name">Pınar Yalçın</p>
+          <p class="footer-meta">Hukuk Fakültesi Mezunu</p>
+        </div>
+      </div>
+
+      <nav aria-label="Alt menü">
+        <ul class="footer-links">
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#egitim">Eğitim</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+          <li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sosyal medya: kullanmadığınız satırı silin -->
+      <ul class="footer-social">
+        <li><a href="https://www.linkedin.com/in/pyal%C3%A7%C4%B1n/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+        </a></li>
+        <li><a href="https://www.instagram.com/pinaryalcinnn1/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg>
+        </a></li>
+      </ul>
+    </div>
+
+    <div class="container footer-legal">
+      <!-- Yasal uyarı -->
+      <p class="disclaimer">Bu internet sitesi kişisel tanıtım ve bilgilendirme amaçlıdır; reklam, iş edinme veya yönlendirme amacı taşımamaktadır. Pınar Yalçın'ın avukatlık ruhsatı bulunmamakta olup bu site üzerinden avukatlık hizmeti veya hukuki danışmanlık sunulmamaktadır. Sitede yer alan bilgiler hukuki danışmanlık niteliği taşımaz.</p>
+      <p class="copyright">&copy; <span data-year>2026</span> Pınar Yalçın. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Başa dön butonu (çevresindeki halka sayfa ilerlemesini gösterir) -->
+  <a class="to-top" href="#hero" aria-label="Sayfanın başına dön">
+    <svg class="to-top-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" pathLength="1"/></svg>
+    <svg class="to-top-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </a>
+
+  <!-- Kısa bildirim (ör. "E-posta kopyalandı") -->
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
