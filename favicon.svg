@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- PY logosu: arama sonuçlarında daire içinde gösterildiği için çerçeve içeride tutuldu -->
+  <rect width="64" height="64" fill="#14213D"/>
+  <rect x="13" y="13" width="38" height="38" fill="none" stroke="#B08D57" stroke-width="1.6"/>
+  <text x="32" y="38.5" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#B08D57">PY</text>
+</svg>

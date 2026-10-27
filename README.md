@@ -20,6 +20,8 @@ Tamamen statik (HTML + CSS + az miktarda JavaScript), tek sayfalık kişisel tan
 ├── sitemap.xml
 ├── robots.txt
 ├── CNAME                   GitHub Pages'e alan adını bildirir (avpinaryalcin.com)
+├── favicon.ico / favicon.svg / favicon-48.png / favicon-96.png / favicon-192.png / apple-touch-icon.png
+│                           PY logosu simgeleri (Google arama sonuçlarında görünür; kök dizinde kalmalı)
 └── .nojekyll               GitHub Pages'in Jekyll işlemesini kapatır
 ```
 
